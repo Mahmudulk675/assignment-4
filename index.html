@@ -29,7 +29,7 @@
 
     <!--Booking Section-->
     <section id="bookingSection" class="main-content container">
-        
+
         <div class="booking-content">
             <h1>Cruise Queen</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -66,10 +66,10 @@
 
                 </div>
                 <div class="plus-minus-btn">
-                    <button onclick="getButtonValue(true, 'f-class-input', 'f-class-ticket')" id="f-class-plus"
+                    <button onclick="getButtonValue(true, 'f-class-input', 'f-class-price')" id="f-class-plus"
                         class="btn btn-default" value="0"><i class="fas fa-plus"></i></button>
-                    <input id="f-class-ticket" type="text" value="0">
-                    <button onclick="getButtonValue(false, 'f-class-input', 'f-class-ticket')" id="f-class-minus"
+                    <input id="f-class-price" type="text" value="0">
+                    <button onclick="getButtonValue(false, 'f-class-input', 'f-class-price')" id="f-class-minus"
                         class="btn btn-default" value="0"><i class="fas fa-minus"></i></button>
                     <!-- <p>+ -</p> -->
                 </div>
@@ -81,12 +81,12 @@
                     <input id="e-class-input" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <button onclick="getButtonValue(true, 'e-class-input', 'e-class-ticket')
-                    " id="e-class-plus" class="btn btn-default" value="0"><i
-                            class="fas fa-plus"></i></button>
-                    <input id="e-class-ticket" type="text" value="0" >
-                    <button onclick="getButtonValue(false, 'e-class-input', 'e-class-ticket')
-                    " id="e-class-minus" class="btn btn-default pe-auto" value="0"><i class="fas fa-minus"></i></button>
+                    <button onclick="getButtonValue(true, 'e-class-input', 'e-class-price')
+                    " id="e-class-plus" class="btn btn-default" value="0"><i class="fas fa-plus"></i></button>
+                    <input id="e-class-price" type="text" value="0">
+                    <button onclick="getButtonValue(false, 'e-class-input', 'e-class-price')
+                    " id="e-class-minus" class="btn btn-default pe-auto" value="0"><i
+                            class="fas fa-minus"></i></button>
                     <!-- <p> <span>+</span> <span>-</span> </p> -->
                 </div>
             </div>
@@ -125,17 +125,22 @@
     <section id="receipt">
         <div class="card text-center">
             <div class=" card-header">
-              <h2 class="primary text-center">Booking Confirmed!</h2>
+                <h2 class="primary text-center">Booking Confirmed!</h2>
             </div>
             <div class="card-body">
-              <h3 class="card-title">Thanks for traveling with us.</h3>
-              <div class="container px-4">
-              
-              </div >
-              <button type="button" class="position-absolute dnBtn btn btn-primary btn-lg"><h3>Download Recipt</h3></button>
+                <h3 class="card-title">Thanks for traveling with us.</h3><br>
+                <h4>Your Ticket Amount is:- <span id="popUpTicket"></span> </h4>
+                <h4>Your Total Amount is:- $<span id="popUpAmount"></span> </h4>
+                <div class="container px-4">
+
+                </div>
+                <button type="button" class="position-absolute dnBtn btn btn-primary btn-lg">
+                    <h3>Download Recipt</h3>
+                </button>
             </div>
-         
-          </div>
+
+        </div>
+
 
     </section>
 
